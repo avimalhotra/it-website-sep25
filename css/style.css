@@ -67,9 +67,28 @@ nav a{ color: inherit; font-weight: 600; display: block; padding: 5px;}
 .about-us{ margin: 100px 0;}
 .about-us ul{ list-style: disc inside; line-height: 40px;}
 
+.our-work{ margin: 100px 0;}
+.works{ margin-top: 40px;}
+.works ul{ gap: 20px;}
+.works li > a{ display: block; line-height: 81px; border: 2px solid transparent; height: 300px; border-radius: 5px; box-shadow: 0 0 18px #0000001a; writing-mode: sideways-lr; text-align: center; color: var(--b); font-size: 24px; font-weight: 500; }
+.work{ display: none; margin-left: 20px;}
+li.active .work{ display: block; }
+li.active a{ border-color: var(--b); }
+.work h3{ font-size: 24px; font-weight: 500;}
+.work a{ display: block; width: 184px; line-height: 51px; text-align: center; background: var(--b); color: var(--w); border-radius: 5px;}
+.work-img{ flex-shrink: 0; margin-right: 20px;}
+.reviews{ margin-top: 40px;}
+.review{}
+.review-top{ padding: 60px 64px 0; box-shadow: 0 0 18px #0000001a }
+.review-bottom{ padding-top: 54px; }
+.rating span{ color: #7d7d7d;}
+.rating span.fill{ color: #FFC107; }
+.rating { margin: 20px 0;}
+.rating + img{ transform: translateY(34px); }
+
+
 
 .wrap-3{ background: var(--b); color: var(--w); padding: 60px 0;}
-
 
 
 /* responsive */
@@ -92,6 +111,8 @@ nav a{ color: inherit; font-weight: 600; display: block; padding: 5px;}
      .col-t-12{ grid-column: span 12;} 
      nav li{ margin: 0 5px;}
      nav a{ font-size: 14px;}
+     .work-img img{ width: 200px;}
+     .works li > a{ line-height: 46px;}
 }
 
 @media screen and (max-width:767px){
@@ -109,6 +130,7 @@ nav a{ color: inherit; font-weight: 600; display: block; padding: 5px;}
      .col-m-12{ grid-column: span 12;}  
      .collapse{ display: none;}
      .order-m-1{ order: -1; }
+     .work-img img{width: 150px;} 
 }
 
 @media screen and (max-width:480px){
@@ -125,4 +147,9 @@ nav a{ color: inherit; font-weight: 600; display: block; padding: 5px;}
      .col-p-11{ grid-column: span 11;}
      .col-p-12{ grid-column: span 12;} 
      .order-p-1{ order: -1; }
+     .works :is(ul,li){ flex-flow: column; }
+     .works li > a{ writing-mode: horizontal-tb; height: auto;}
+     .work >div{ flex-flow: column;}
+     .work{ margin: 20px 0 0 0;}
+     .work-img img{ width: auto;}
 }
