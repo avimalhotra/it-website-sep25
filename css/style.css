@@ -89,7 +89,7 @@ li.active a{ border-color: var(--b); }
 .project-desc{ padding:0 150px 0 60px;}
 .project-desc p{ margin: 25px 0;}
 .project-desc a{ display: block; width: 214px; line-height: 51px; background: var(--b); color: #fff; border-radius: 5px; text-align: center; }
-.team{ margin: 100px 0; text-align: center;}
+.team{ margin: 100px 0 0 0; text-align: center;}
 .team .row{ margin-top: 50px;}
 .team-member{ padding: 10px; border-radius: 5px; box-shadow: 0 0 18px #0000001a; border: 2px solid transparent;}
 .team-member h3{ font-size: 24px; font-weight: 600; margin: 20px 0 5px; }
